@@ -9,7 +9,16 @@ export default function App() {
   return (
     <>
 
+      <StatusBar
+      backgroundColor='#FFFFFF'
+      barStyle="dark-content"
+      />
       
+    <SafeAreaView>
+
+      <Header/>
+
+    </SafeAreaView>
       
     </>
 
