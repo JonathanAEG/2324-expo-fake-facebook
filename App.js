@@ -53,7 +53,9 @@ export default function App() {
         else if(route.name === 'Notifications') iconName = 'bell-outline'
         else if(route.name === 'Menu') iconName = 'menu'
         return <MaterialCommunityIcons name={iconName} size={26} color={color} />;
-      }
+      },
+
+      
     })}
     >
 

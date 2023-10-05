@@ -55,7 +55,26 @@ export default ToolBar =()=>{
     return(
         <Container>
             <Row>
-                <Avatar/>
+                <Avatar source={require('../../../assets/m-mortimer-min.webp')} />
+                <Input placeholder="¿Qué estás pensando?" />
+            </Row>
+            <Divider/>
+            <Row>
+                <Menu>
+                    <MaterialCommunityIcons name="video-account" size={20} color="#F44337" />
+                    <MenuText>Directo</MenuText>
+                </Menu>
+                <Separator/>
+                <Menu>
+                    <MaterialCommunityIcons name="image-multiple" size={20} color="#4CAF58" />
+                    <MenuText>Foto</MenuText>
+                </Menu>
+                <Separator/><Menu>
+                    <MaterialCommunityIcons name="video-plus" size={20} color="#A748EE" />
+                    <MenuText>Sala</MenuText>
+                </Menu>
+                <Separator/>
+
             </Row>
 
         </Container>
