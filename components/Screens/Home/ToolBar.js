@@ -69,11 +69,11 @@ export default ToolBar =()=>{
                     <MaterialCommunityIcons name="image-multiple" size={20} color="#4CAF58" />
                     <MenuText>Foto</MenuText>
                 </Menu>
-                <Separator/><Menu>
+                <Separator/>
+                <Menu>
                     <MaterialCommunityIcons name="video-plus" size={20} color="#A748EE" />
                     <MenuText>Sala</MenuText>
                 </Menu>
-                <Separator/>
 
             </Row>
 
