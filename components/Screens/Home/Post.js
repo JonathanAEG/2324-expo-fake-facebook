@@ -97,3 +97,69 @@ const Text = styled.Text`
     font-size: 12px;
     color: #424040;
 `
+
+export default Post=()=>{
+    return(
+        <>
+        {fakeData.map((user, i)=>{
+            return(
+
+            <Container key={i.toString()} >
+                <Header>
+                    <Row>
+                        <Avatar source={user.source} />
+                        <View>
+                            <User> {user.name} </User>
+                            <Row>
+                                <Time> {user.time} </Time>
+                                <MaterialCommunityIcons name="circle-small" size={12} color= '#747476' />
+                                <MaterialCommunityIcons name="earth" size={10} color= '#747476' />
+                            </Row>
+                        </View>
+
+                    </Row>
+                    <MaterialCommunityIcons name="dots-horizontal" size={20} color= '#747476' />
+
+                </Header>
+
+                <PostContent> {user.postContent} </PostContent>
+                <Photo source={user.postImage} />
+
+                <Footer>
+                    <FooterCount>
+                        <Row>
+                            <IconCount>
+                            <MaterialCommunityIcons name="thumb-up-outline" size={12} color= '#FFFFFF' />
+                            </IconCount>
+                            <TextCount> {user.likes} </TextCount>
+                        </Row>
+                        <TextCount> {user.comments} </TextCount>
+                    </FooterCount>
+                    <Separator/>
+                    <FooterMenu>
+                        <Button>
+                            <Icon>
+                            <MaterialCommunityIcons name="thumb-up-outline" size={20} color= '#424040' />
+                            </Icon>
+                            <Text>Me gusta</Text>
+                        </Button>
+                        <Button>
+                            <Icon>
+                            <MaterialCommunityIcons name="comment-outline" size={20} color= '#424040' />
+                            </Icon>
+                            <Text>Comentar</Text>
+                        </Button>
+                        <Button>
+                            <Icon>
+                            <MaterialCommunityIcons name="share-outline" size={20} color= '#424040' />
+                            </Icon>
+                            <Text>Compartir</Text>
+                        </Button>
+                    </FooterMenu>
+                </Footer>
+            </Container>
+            )
+        })}
+        </>
+    )
+}

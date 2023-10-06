@@ -1,10 +1,11 @@
 import React from "react";
-import { Text } from "react-native";
+import { Text, ScrollView } from "react-native";
 import styled from "styled-components";
 import ToolBar from "./ToolBar";
 import MainSeparator from "../../MainSeparator";
 import Users from "../../Users";
 import Story from "./Story";
+import Post from "./Post";
 
 const View = styled.View`
 
@@ -15,14 +16,14 @@ export default Home=()=>{
 
     return(
 
-        <View>
+        <ScrollView>
             <ToolBar/>
             <MainSeparator/>
             <Users/>
             <MainSeparator/>
             <Story/>
             <MainSeparator/>
-
-        </View>
+            <Post/>
+        </ScrollView>
     )
 }
