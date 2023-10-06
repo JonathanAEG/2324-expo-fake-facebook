@@ -1,6 +1,7 @@
 import React from "react";
 import { Text } from "react-native";
 import styled from "styled-components";
+import ProfileHeader from "./Profile/ProfileHeader";
 
 const View = styled.View`
 
@@ -12,7 +13,7 @@ export default Profile=()=>{
     return(
 
         <View>
-            <Text>Home Screen</Text>
+            <ProfileHeader/>
         </View>
     )
 }
